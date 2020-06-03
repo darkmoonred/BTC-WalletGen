@@ -1,0 +1,47 @@
+﻿@model InstantWallet.Models.Wallet
+
+@{
+    ViewData["Title"] = "Instant Wallet";
+}
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.myPublicAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.myPrivateKey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mnemo)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.myPublicAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.myPrivateKey)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mnemo)
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="/Wallet" button type="button" class="btn btn-primary btn-block">Generate New Wallet &nbsp; <i style='font-size:24px' class='fas'>&#xf555;</i></a>
+
+<br />
+
+<div class="alert alert-success">
+    <strong>Success!</strong> New Wallet Generated.
+</div>
+
+<div class="alert alert-danger">
+    <strong>Danger!</strong> Remember to write down your seed phrase & privatekey.
+</div>
