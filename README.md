@@ -1,4 +1,4 @@
-# Insta-Wallet
+# BTC WALLET GENERATOR
 Instant Browser Based Bitcoin Wallet.
 
 
